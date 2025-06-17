@@ -12,32 +12,32 @@ body {
 }
 
 .overlay {
-    background-color: rgba(13, 12, 15, 0.8);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background-color: rgba(13, 12, 15, 0.85);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .content h1 {
-    font-size: 3em;
-    letter-spacing: 2px;
-    color: #B76E79;
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: #B76E79;
 }
 
 .content a {
-    margin-top: 20px;
-    display: inline-block;
-    color: #f9f6f2;
-    text-decoration: none;
-    font-size: 1.2em;
-    border: 1px solid #B76E79;
-    padding: 10px 20px;
-    transition: background 0.3s ease;
+  margin-top: 20px;
+  display: inline-block;
+  color: #F9F6F2;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid #B76E79;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
 }
 
 .content a:hover {
-    background-color: #B76E79;
-    color: #0D0C0F;
+  background-color: #B76E79;
+  color: #0D0C0F;
 }
