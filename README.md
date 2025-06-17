@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://velvetweapon.github.io/assets/velvet-banner.png" alt="Velvet Weapon Banner" style="max-width:100%; border-radius: 12px;">
+  <img src="[(https://github.com/velvetweapon/velvet-redirect/blob/796b683e2231edb3a3da4f5e395707011ef3d4bc/velvet-banner.PNG)"] alt="Velvet Weapon Banner" style="max-width:100%; border-radius: 12px;">
 </p>
 
 <h1 align="center">🗝️ The Vault Exists</h1>
