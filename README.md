@@ -1,11 +1,10 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/velvetweapon/velvet-redirect/main/vault-redirect/velvet-banner.PNG" alt="Velvet Weapon Banner" style="max-width:100%; border-radius:12px;" />
+  <img src="https://raw.githubusercontent.com/velvetweapon/velvet-redirect/main/velvet-banner.PNG" 
+       alt="Velvet Weapon Banner" style="max-width:100%; border-radius:12px;" />
 </p>
 
 <h1 align="center">🗝️ The Vault Exists</h1>
-
-<p align="center"><i>“She doesn’t shout to be heard. She whispers — and the world leans in.”</i></p>---
-
+<p align="center"><i>“She doesn’t shout to be heard. She whispers — and the world leans in.”</i></p>
 ## Welcome to the Vault
 
 Velvet Weapon™ is an encrypted creator system built for quiet power moves, faceless digital empires, and whisper-level influence.  
