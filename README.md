@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/velvetweapon/velvet-redirect/main/vault-redirect/velvet-banner.PNG" alt="Velvet Weapon Banner" style="max-width:100%; border-radius:12px;" />
+  <img src="https://raw.githubusercontent.com/velvetweapon/velvet-redirect/main/vault-redirect/velvet-banner.PNG" 
 </p><p align="center">
   <img src="<p align="center">
   <img src="https://raw.githubusercontent.com/velvetweapon/velvet-redirect/main/vault-redirect/velvet-banner.PNG" alt="Velvet Weapon Banner" style="max-width:100%; border-radius:12px;" />
