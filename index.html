@@ -1,74 +1,60 @@
 
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Velvet Vault</title>
+  <meta charset="UTF-8">
+  <title>Velvet Weapon — The Vault</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    html, body {
+    body {
+      background-color: #0D0C0F;
+      color: #F9F6F2;
+      font-family: 'Playfair Display', serif;
       margin: 0;
       padding: 0;
-      height: 100%;
-      width: 100%;
-      background-color: #0d0c0f;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #f9f6f2;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
       text-align: center;
     }
 
+    h1 {
+      color: #B76E79;
+      font-size: 36px;
+      margin-top: 150px;
+      margin-bottom: 20px;
+    }
 
-#typewriter {
-  border-right: .15em solid #b76e79;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 3s steps(40, end) forwards, blink .75s step-end infinite;
-}
+    h2 {
+      color: #B76E79;
+      font-size: 28px;
+      margin-top: 40px;
+    }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+    p {
+      color: #DAD7D0;
+      font-size: 16px;
+      font-family: 'DM Sans', sans-serif;
+      margin-bottom: 40px;
+    }
 
-@keyframes blink {
-  from, to { border-color: transparent }
-  50% { border-color: #b76e79; }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-    font-size: 1.2rem;
-  }
-}
-
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 600px;
+      height: 800px;
+      display: block;
+      margin: 0 auto 60px;
+      background-color: #0D0C0F;
+    }
   </style>
 </head>
 <body>
-<h1 style="color:#B76E79; font-family:'Playfair Display', serif; font-size:36px;">The Vault Exists</h1>
 
-<!-- 🔐 VELVET VAULT ENTRY -->
-<div style="text-align: center; padding-top: 40px;">
-  <h2 style="color: #B76E79; font-family: 'Playfair Display', serif; font-size: 28px;">
-    Enter the Vault
-  </h2>
-  <p style="color: #DAD7D0; font-family: 'DM Sans', sans-serif; font-size: 16px;">
-    The ritual is active. Only the chosen find the key.
-  </p>
+  <h1>The vault exists. Only the chosen find the key.</h1>
 
-  <iframe 
-    src="https://velvetweapon.kit.com/b477766e4c" 
-    width="100%" 
-    height="800" 
-    frameborder="0" 
-    style="border: none; max-width: 600px; margin: 30px auto; display: block; background: #0D0C0F;">
-  </iframe>
-</div>
+  <!-- 🔐 VELVET VAULT ENTRY -->
+  <h2>Enter the Vault</h2>
+  <p>The ritual is active. Only the chosen find the key.</p>
+
+  <iframe src="https://velvetweapon.kit.com/b477766e4c"></iframe>
+
+</body>
+</html>
