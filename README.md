@@ -1,9 +1,9 @@
-<p align="center">
-  <img src="![image](https://github.com/user-attachments/assets/edbafed3-dc89-42eb-9349-adc1b94c04ce)
- alt="Velvet Weapon Banner" style="max-width:100%; border-radius: 12px;">
-</p>
 
-<h1 align="center">🗝️ The Vault Exists</h1>
+<p align="center">
+  <img src="<p align="center">
+  <img src="https://raw.githubusercontent.com/velvetweapon/velvet-redirect/main/vault-redirect/velvet-banner.PNG" alt="Velvet Weapon Banner" style="max-width:100%; border-radius:12px;" />
+</p> alt="Velvet Weapon Banner" style="max-width:100%; border-radius:12px;" />
+</p><h1 align="center">🗝️ The Vault Exists</h1>
 
 <p align="center"><i>“She doesn’t shout to be heard. She whispers — and the world leans in.”</i></p>
 
