@@ -64,7 +64,8 @@
       if (input === pass) {
         // Optional: store unlock status
         localStorage.setItem('vault13Access', 'granted');
-        window.location.href = "drop13.html"; // 👈 Replace with actual Drop 13 HTML/URL
+        window.location.href = <a href="drop13.html" class="vault-button">Access Drop 13</a>
+/ 👈 Replace with actual Drop 13 HTML/URL
       } else {
         error.textContent = "Access denied. The vault does not repeat itself.";
       }
