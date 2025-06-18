@@ -1,0 +1,107 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0D0C0F;
+  background-image: url('velvet_background_darker_lightleak.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Playfair Display', serif;
+  color: #F9F6F2;
+  height: 100vh;
+}
+
+.overlay {
+  background-color: rgba(13, 12, 15, 0.85);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  color: #B76E79;
+}
+
+.content a {
+  margin-top: 20px;
+  display: inline-block;
+  color: #F9F6F2;
+  text-decoration: none;
+  font-size: 1.2em;
+  border: 1px solid #B76E79;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.content a:hover {
+  background-color: #B76E79;
+  color: #0D0C0F;
+}
+.vault-drop {
+  background-color: rgba(13, 12, 15, 0.85);
+  padding: 40px;
+  max-width: 700px;
+  margin: 50px auto;
+  text-align: center;
+  border: 1px solid #B76E79;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(183, 110, 121, 0.3);
+}
+
+.vault-drop h1 {
+  font-size: 2.5em;
+  color: #F9F6F2;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.vault-drop .subtitle {
+  font-size: 1.2em;
+  color: #B76E79;
+  margin-bottom: 30px;
+}
+
+.vault-drop .drop-intro {
+  color: #DAD7D0;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.vault-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+  color: #F9F6F2;
+}
+
+.vault-list li {
+  margin-bottom: 10px;
+}
+
+.vault-button {
+  display: inline-block;
+  padding: 14px 28px;
+  color: #0D0C0F;
+  background-color: #B76E79;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.vault-button:hover {
+  background-color: #F9F6F2;
+  color: #0D0C0F;
+}
+
+.after-text {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #777;
+  font-style: italic;
+}
