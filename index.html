@@ -129,7 +129,8 @@
       const input = document.getElementById('vaultPassword').value.trim().toLowerCase();
       const pass = 'whisperededge';
       const error = document.getElementById('errorText');
-
+console.log("User input:", input);
+console.log("Expected:", pass);
    if (input === pass) {
   localStorage.setItem('vault13Access', 'granted');
   document.body.classList.add('unlocked');
