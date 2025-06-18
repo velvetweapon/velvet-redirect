@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Drop 13</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('velvet_background_darker_lightleak.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #f9f6f2;
+      font-family: 'DM Sans', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .vault-container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      max-width: 500px;
+    }
+
+    input[type="password"] {
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      margin-top: 20px;
+      background: #1a1a1a;
+      color: #f9f6f2;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      background: #B76E79;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .subtitle {
+      font-style: italic;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="vault-container">
+    <h1>🗝️ The Vault Awaits</h1>
+    <p class="subtitle">Only the chosen find the key.</p>
+    <input type="password" id="vaultPass" placeholder="Enter passphrase">
+    <button onclick="checkPass()">Unlock Drop 13</button>
+    <p id="errorText" style="color: #ff5f5f;"></p>
+  </div>
+
+  <script>
+    function checkPass() {
+      const pass = document.getElementById("vaultPass").value;
+      if (pass === "whisperededge") {
+        window.location.href = "drop13-content.html";
+      } else {
+        document.getElementById("errorText").textContent = "Access denied. The vault does not speak twice.";
+      }
+    }
+  </script>
+</body>
+</html>
