@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Velvet Weapon — The Vault</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Enter the Vault</title>
+  <style>
+    body {
+      background-color: #0D0C0F;
+      color: #F9F6F2;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #B76E79;
+      margin-bottom: 1rem;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      background: #1C1B1F;
+      color: #F9F6F2;
+    }
+
+    button {
+      background-color: #B76E79;
+      color: #0D0C0F;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .error {
+      margin-top: 1rem;
+      color: #DD6666;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="overlay">
-    <div class="content">
-      <h1>The vault exists. Only the chosen find the key.</h1>
-      <h2 style="color: #B76E79; font-family: 'Playfair Display', serif; font-size: 28px;">
-        Enter the Vault
-      </h2>
-      <p style="color: #DAD7D0; font-family: 'DM Sans', sans-serif; font-size: 16px;">
-        The ritual is active. Only the chosen find the key.
-      </p>
-     <div class="vault-drop">
-  <h1>The Vault Exists.</h1>
-  <h2 class="subtitle">Only the chosen find the key.</h2>
+  <h1>🗝️ The Vault Requires a Code</h1>
+  <input type="password" id="vaultPassword" placeholder="Enter ritual password..." />
+  <button onclick="checkPassword()">Unlock</button>
+  <div class="error" id="errorText"></div>
 
-  <p class="drop-intro">
-    The ritual is active. The whisper is near. This drop includes:
-  </p>
+  <script>
+    function checkPassword() {
+      const input = document.getElementById('vaultPassword').value.trim().toLowerCase();
+      const pass = 'whisperededge';
+      const error = document.getElementById('errorText');
 
-  <ul class="vault-list">
-    <li>🕯️ Cinematic Ritual Slides</li>
-    <li>🔗 Mirror Loop Prompt PDF</li>
-    <li>🎧 Audio Overlay Link</li>
-    <li>🗝️ Vault Access Instructions</li>
-  </ul>
-
-  <a href="https://example.com/drop13-bundle.zip" target="_blank" class="vault-button">
-    ✦ Download Drop 13 ✦
-  </a>
-
-  <p class="after-text">
-    Use it wisely. The vault does not speak twice.
-  </p>
-</div>
-    </div>
-  </div>
+      if (input === pass) {
+        // Optional: store unlock status
+        localStorage.setItem('vault13Access', 'granted');
+        window.location.href = "drop13.html"; // 👈 Replace with actual Drop 13 HTML/URL
+      } else {
+        error.textContent = "Access denied. The vault does not repeat itself.";
+      }
+    }
+  </script>
 </body>
 </html>
