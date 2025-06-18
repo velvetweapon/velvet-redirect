@@ -130,22 +130,24 @@
       const pass = 'whisperededge';
       const error = document.getElementById('errorText');
 
-      if (input === pass) {
-        localStorage.setItem('vault13Access', 'granted');
-        document.body.classList.add('unlocked');
-        document.body.innerHTML = `
-          <h1>🔓 Drop 13: Whispered Edge</h1>
-          <p>The ritual is active. The whisper is near. This drop includes:</p>
-          <ul class="vault-list">
-            <li><a href="Drop13_CinematicSlides.pdf" target="_blank">🎥 Cinematic Ritual Slides</a></li>
-            <li><a href="MirrorLoopPrompt.pdf" target="_blank">🕯️ Mirror Loop Prompt PDF</a></li>
-            <li><a href="AudioOverlayInstructions.txt" target="_blank">🎧 Audio Overlay Link</a></li>
-            <li><a href="VaultAccessGuide.pdf" target="_blank">🗝️ Vault Access Instructions</a></li>
-          </ul>
-          <a href="https://youruser.github.io/velvetweapon/Drop13_CinematicSlides.zip" class="vault-button" target="_blank">🗂️ Download Drop 13</a>
-          <p><em>Use it wisely. The vault does not repeat twice.</em></p>
-        `;
-      } else {
+   if (input === pass) {
+  localStorage.setItem('vault13Access', 'granted');
+  document.body.classList.add('unlocked');
+
+  document.body.innerHTML = `
+    <h1>🔓 Drop 13: Whispered Edge</h1>
+    <p>The ritual is active. The whisper is near. This drop includes:</p>
+    <ul class="vault-list">
+      <li><a href="Drop13_CinematicSlides.pdf" target="_blank">🕯️ Cinematic Ritual Slides</a></li>
+      <li><a href="MirrorLoopPrompt.pdf" target="_blank">🪞 Mirror Loop Prompt PDF</a></li>
+      <li><a href="AudioOverlayInstructions.txt" target="_blank">🎧 Audio Overlay Link</a></li>
+      <li><a href="VaultAccessGuide.pdf" target="_blank">🗝️ Vault Access Instructions</a></li>
+    </ul>
+    <a href="https://youruser.github.io/velvetweapon/Drop13_CinematicSlides.zip" target="_blank" class="vault-button">🔘 Download Drop 13</a>
+    <p><em>Use it wisely. The vault does not repeat twice.</em></p>
+  `;
+}
+  else {
         error.textContent = "Access denied. The vault does not repeat itself.";
       }
     }
