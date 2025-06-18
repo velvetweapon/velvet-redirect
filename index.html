@@ -5,21 +5,24 @@
   <title>Enter the Vault</title>
   <style>
     body {
-      background-color: #0D0C0F;
-      color: #F9F6F2;
+      background: url('velvet_background_darker_lightleak.png') no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Playfair Display', serif;
+      color: #F9F6F2;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
       flex-direction: column;
+      transition: all 1s ease;
     }
 
     h1 {
       font-size: 2.5rem;
       color: #B76E79;
       margin-bottom: 1rem;
+      text-align: center;
     }
 
     input[type="password"] {
@@ -34,12 +37,21 @@
 
     button {
       background-color: #B76E79;
-      color: #0D0C0F;
+      color: #D0D0CF;
       border: none;
       padding: 10px 20px;
       border-radius: 6px;
       font-size: 1rem;
       cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #000;
+      color: #F9F6F2;
+      text-shadow: 0 0 6px rgba(255,255,255,0.2);
+      transform: scale(1.02);
+      animation: flicker 1s infinite;
     }
 
     .error {
@@ -47,10 +59,67 @@
       color: #DD6666;
       font-size: 0.9rem;
     }
+
+    ul.vault-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+
+    ul.vault-list li {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+    }
+
+    ul.vault-list a {
+      color: #F77D95;
+      text-decoration: none;
+      transition: 0.3s ease;
+      position: relative;
+    }
+
+    ul.vault-list a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+
+    .vault-button {
+      background-color: #1C1B1F;
+      color: #F9F6F2;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 1.5rem;
+      transition: 0.4s ease;
+    }
+
+    .vault-button:hover {
+      background-color: #B76E79;
+      color: #000;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+
+    body.unlocked {
+      background-color: #000;
+      background-image: none;
+      color: #F9F6F2;
+    }
+
+    body.unlocked h1 {
+      color: #F9F6F2;
+      font-weight: 700;
+      text-shadow: 0 0 8px rgba(255,255,255,0.15);
+    }
   </style>
 </head>
 <body>
-  <h1>🗝️ The Vault Requires a Code</h1>
+  <h1>🔐 The Vault Requires a Code</h1>
   <input type="password" id="vaultPassword" placeholder="Enter ritual password..." />
   <button onclick="checkPassword()">Unlock</button>
   <div class="error" id="errorText"></div>
@@ -62,10 +131,20 @@
       const error = document.getElementById('errorText');
 
       if (input === pass) {
-        // Optional: store unlock status
         localStorage.setItem('vault13Access', 'granted');
-        window.location.href = <a href="drop13.html" class="vault-button">Access Drop 13</a>
-/ 👈 Replace with actual Drop 13 HTML/URL
+        document.body.classList.add('unlocked');
+        document.body.innerHTML = `
+          <h1>🔓 Drop 13: Whispered Edge</h1>
+          <p>The ritual is active. The whisper is near. This drop includes:</p>
+          <ul class="vault-list">
+            <li><a href="Drop13_CinematicSlides.pdf" target="_blank">🎥 Cinematic Ritual Slides</a></li>
+            <li><a href="MirrorLoopPrompt.pdf" target="_blank">🕯️ Mirror Loop Prompt PDF</a></li>
+            <li><a href="AudioOverlayInstructions.txt" target="_blank">🎧 Audio Overlay Link</a></li>
+            <li><a href="VaultAccessGuide.pdf" target="_blank">🗝️ Vault Access Instructions</a></li>
+          </ul>
+          <a href="https://youruser.github.io/velvetweapon/Drop13_CinematicSlides.zip" class="vault-button" target="_blank">🗂️ Download Drop 13</a>
+          <p><em>Use it wisely. The vault does not repeat twice.</em></p>
+        `;
       } else {
         error.textContent = "Access denied. The vault does not repeat itself.";
       }
